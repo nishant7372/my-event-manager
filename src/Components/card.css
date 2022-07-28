@@ -1,0 +1,83 @@
+.event-card {
+  display: flex;
+  border: none;
+  flex-direction: column;
+  width: 22rem;
+  align-items: center;
+  margin: 20px auto;
+  padding: 10px 0px 20px 0px;
+  box-shadow: 7px 5px 5px rgba(0, 0, 0, 0.5);
+}
+.event-card p {
+  font-size: 16px;
+}
+
+.yellow {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(239, 243, 28, 0.153),
+    rgba(239, 243, 28, 0.293)
+  );
+}
+
+.magenta {
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 0, 255, 0.115),
+    rgba(255, 0, 255, 0.215)
+  );
+}
+
+.blue {
+  background-image: linear-gradient(
+    to left,
+    rgba(47, 47, 247, 0.123),
+    rgba(47, 47, 247, 0.242)
+  );
+}
+
+.voilet {
+  background-image: linear-gradient(
+    to top,
+    rgba(238, 130, 238, 0.323),
+    rgba(238, 130, 238, 0.123)
+  );
+}
+
+.sky-blue {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(135, 207, 235, 0.294),
+    rgba(135, 207, 235, 0.154)
+  );
+}
+
+.green {
+  background-image: linear-gradient(
+    to left,
+    rgba(68, 244, 68, 0.279),
+    rgba(89, 242, 89, 0.233)
+  );
+}
+
+.event-card button {
+  color: white;
+  font-weight: 500;
+  background-color: rgba(0, 0, 255, 0.694);
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+}
+
+.event-card button:hover {
+  transform: scale(1.05);
+  transition: all 400ms;
+  background-color: rgba(0, 0, 255, 0.826);
+}
+
+.event-card:hover {
+  transform: scale(1.01);
+  transition: transform 300ms;
+  box-shadow: 7px 5px 5px rgba(0, 0, 0, 0.6);
+}

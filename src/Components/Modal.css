@@ -1,0 +1,77 @@
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  background-color: white;
+  margin: 30vh auto;
+  width: 33vw;
+  padding: 20px 10px;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 5px;
+  border-radius: 9px;
+  position: relative;
+}
+
+.modal .title {
+  margin-top: 25px;
+  margin-right: 10px;
+}
+
+.title-label,
+.date-label {
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin-left: 2vw;
+  margin-right: 3.4vw;
+  gap: 5px;
+}
+
+input[type="text"] {
+  padding: 4px;
+  margin: 3px;
+  width: 100%;
+  margin-bottom: 6px;
+}
+
+input[type="date"] {
+  padding: 4px;
+  margin: 3px;
+  width: 100%;
+  margin-bottom: 6px;
+}
+
+.close {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  background-color: rgba(255, 0, 0, 0.625);
+  padding: 0.8vh 1vw;
+}
+
+.close:hover {
+  background-color: rgba(255, 0, 0, 0.792);
+}
+
+.submit {
+  margin-left: 2vw;
+  padding: 8px 5px;
+  margin-right: 2vw;
+}
+
+.modal h4 {
+  margin: 0;
+  align-self: flex-start;
+  margin: 3px;
+}
