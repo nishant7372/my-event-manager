@@ -13,6 +13,8 @@
   flex-wrap: nowrap;
   background-color: white;
   margin: 30vh auto;
+  min-width: 300px;
+  max-width: 1000px;
   width: 33vw;
   padding: 20px 10px;
   align-items: stretch;

@@ -7,17 +7,22 @@ import EventList from "./Components/EventList";
 
 function App() {
   const [events, setEvents] = useState([
-    { title: "Satin's Birthday Party", date: "29-08-2022", id: 1 },
-    { title: "Nitin's Birthday Party", date: "05-09-2022", id: 2 },
-    { title: "Nishant's Birthday Party", date: "10-10-2022", id: 3 },
-    { title: "Srishti's Birthday Party", date: "20-03-2023", id: 4 },
+    { title: "Riya's Birthday Party", date: "2022-08-29", id: 1 },
+    { title: "Rohan's Birthday Party", date: "2022-09-05", id: 2 },
+    { title: "Naman's Birthday Party", date: "2022-10-10", id: 3 },
+    { title: "Kirti's Birthday Party", date: "2023-03-20", id: 4 },
   ]);
+
   const [showModal, setshowModal] = useState(false);
   const [showEvents, setshowEvents] = useState(true);
 
   const addEvent = (event) => {
     setEvents((prevEvents) => {
-      return [...prevEvents, event];
+      if (event.title !== "") return [...prevEvents, event];
+      else {
+        setshowModal(true);
+        return [...prevEvents];
+      }
     });
   };
 
@@ -37,7 +42,7 @@ function App() {
     <div className="App">
       <Title />
       <div className="main">
-        {events.length != 0 && !showEvents && (
+        {events.length !== 0 && !showEvents && (
           <button
             onClick={() => {
               setshowEvents(true);
@@ -47,7 +52,7 @@ function App() {
           </button>
         )}
 
-        {events.length != 0 && showEvents && (
+        {events.length !== 0 && showEvents && (
           <button
             onClick={() => {
               setshowEvents(false);

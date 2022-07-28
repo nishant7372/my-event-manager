@@ -2,7 +2,9 @@
   display: flex;
   border: none;
   flex-direction: column;
-  width: 22rem;
+  min-width: 350px;
+  max-width: 1000px;
+  width: 33vw;
   align-items: center;
   margin: 20px auto;
   padding: 10px 0px 20px 0px;
